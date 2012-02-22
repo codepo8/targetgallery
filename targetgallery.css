@@ -1,0 +1,203 @@
+* { 
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 15px;
+  font-family: helvetica, arial, sans-serif;
+  padding: 4em;
+}
+footer, section, article, header, aside, figure, nav {
+  display: block;
+}
+
+nav {
+  padding: 20px;
+  z-index: 20;
+  top: 0px;
+  left: 0;
+  background: #fff;
+  position: absolute;
+}
+
+nav li {
+  display: inline;
+  padding-right: 1em;
+}
+nav a {
+  background: #369;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover, nav a:focus {
+  background: #036;
+}
+aside {
+  clear: both;
+}
+aside  a {
+  color: #369;
+}
+aside li {
+  padding-bottom: 0.5em;
+}
+footer {
+  clear: both;
+  margin: 2em 0;
+  font-size: 10px;
+}
+footer a {
+  color: #000;
+}
+
+@media screen and (min-width: 400px) {
+
+  .gallery {
+    position: relative;
+    height: 280px;
+    width: 340px;
+    overflow: hidden;
+    padding-right: 30px;
+    float: left;
+  }
+  .target {
+    position: absolute;
+  }
+  
+  
+  .left .target{
+    top: 60px;
+    left: -320px;
+    height: 220px;
+    width: 300px;
+    -webkit-transition: 1s;
+       -moz-transition: 1s;
+        -ms-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
+  }
+  .left .target:target {
+    top: 60px;
+    left: 20px;
+  }
+
+
+  .top .target{
+    top: -300px;
+    left: 20px;
+    height: 220px;
+    width: 300px;
+    -webkit-transition: 1s;
+       -moz-transition: 1s;
+        -ms-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
+  }
+  .top .target:target {
+    top: 60px;
+  }
+
+
+  .opacity .target {
+    opacity: 0;
+    top: 60px;
+    left: 20px;
+    -webkit-transition: 1s;
+       -moz-transition: 1s;
+        -ms-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
+  }
+  .opacity .target:target {
+    opacity: 1;
+    top: 60px;
+    left: 20px;
+  }
+
+
+  .shrink .target {
+    opacity: 0;
+    top: 60px;
+    left: 20px;
+    -webkit-transform: scale( 0, 0 );
+       -moz-transform: scale( 0, 0 );
+        -ms-transform: scale( 0, 0 );
+         -o-transform: scale( 0, 0 );
+            transform: scale( 0, 0 );
+    -webkit-transition: 1s;
+       -moz-transition: 1s;
+        -ms-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
+  }
+  .shrink .target:target {
+    opacity: 1;
+    top: 60px;
+    left: 20px;
+    -webkit-transform: scale( 1, 1 );
+       -moz-transform: scale( 1, 1 );
+        -ms-transform: scale( 1, 1 );
+         -o-transform: scale( 1, 1 );
+            transform: scale( 1, 1 );
+  }
+
+
+  .flip .target {
+    opacity: 0;
+    top: 60px;
+    left: 20px;
+    -webkit-transform: rotateY(0);
+       -moz-transform: rotateY(0);
+        -ms-transform: rotateY(0);
+         -o-transform: rotateY(0);
+            transform: rotateY(0);
+    -webkit-transition: 1s;
+       -moz-transition: 1s;
+        -ms-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
+  }
+  .flip .target:target {
+    opacity: 1;
+    top: 60px;
+    left: 20px;
+    -webkit-transform: rotateY(360deg);
+       -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+         -o-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+
+
+  .rotate .target {
+    opacity: 0;
+    top: 60px;
+    left: 20px;
+    -webkit-transform: rotateZ(0);
+       -moz-transform: rotateZ(0);
+        -ms-transform: rotateZ(0);
+         -o-transform: rotateZ(0);
+            transform: rotateZ(0);
+    -webkit-transition: 1s;
+       -moz-transition: 1s;
+        -ms-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
+  }
+  .rotate .target:target {
+    opacity: 1;
+    top: 60px;
+    left: 20px;
+    -webkit-transform: rotateZ(360deg);
+       -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+         -o-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+
+
+}
+  

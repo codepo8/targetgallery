@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>An image gallery in pure CSS using :target</title>
+  <meta type="description" content="An image gallery in pure CSS using :target">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" href="targetgallery.css" type="text/css">
+</head>
+<body>
+  <header><h1>Kittens!</h1></header>
+  <nav>
+    <button onclick="document.querySelector('section').className='gallery left'">Effect: left</button>
+    <button onclick="document.querySelector('section').className='gallery opacity'">Effect: opacity</button>
+    <button onclick="document.querySelector('section').className='gallery top'">Effect: top</button>
+    <button onclick="document.querySelector('section').className='gallery shrink'">Effect: shrink</button>
+    <button onclick="document.querySelector('section').className='gallery flip'">Effect: flip</button>
+    <button onclick="document.querySelector('section').className='gallery rotate'">Effect: rotate</button>
+  </nav>
+
+  <section class="gallery left">
+    <nav>
+      <ul>
+        <li><a href="#one">One</a></li>
+        <li><a href="#two">Two</a></li>
+        <li><a href="#three">Three</a></li>
+        <li><a href="#four">Four</a></li>
+      </ul>
+    </nav>
+    <article id="one" class="target">
+      <figure>
+        <img src="http://placekitten.com/g/300/200" alt="Kitten 1">
+      </figure>
+    </article>
+    <article id="two" class="target">
+      <figure>
+        <img src="http://placekitten.com/g/300/201" alt="Kitten 2">
+      </figure>
+    </article>
+    <article id="three" class="target">
+      <figure>
+        <img src="http://placekitten.com/g/301/200" alt="Kitten 3">
+      </figure>
+    </article>
+    <article id="four" class="target">
+      <figure>
+        <img src="http://placekitten.com/g/301/201" alt="Kitten 4">
+      </figure>
+    </article>
+  </section>
+  <aside>
+    <ul><li><a href="http://hacks.mozilla.org/2012/02/a-simple-image-gallery-using-only-css-and-the-target-selector/">Read the blog post how this was done</a> on hacks.mozilla.com.</li><li><a href="http://vid.ly/4e9o7y">Watch a screencast</a> of how it should look</li><li><a href="">Fork on GitHub</a></li></ul>
+  </aside>
+  <footer>
+  <p>Written by 
+    <a href="http://christianheilmann.com/">Chris Heilmann</a> 
+    (<a href="http://twitter.com/codepo8">@codepo8</a>)
+  </p>
+</footer>
+</body>
+</html>
